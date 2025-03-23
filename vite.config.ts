@@ -5,7 +5,6 @@ import path from 'path'
 // https://vitejs.dev/config/
 export default defineConfig({
   build: { manifest: true },
-  base: process.env.NODE_ENV === 'production'? '/static/' : '/',
   root: './src',
   server: {
     port: 3000,
