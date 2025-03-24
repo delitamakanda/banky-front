@@ -1,3 +1,1 @@
-[site]
-bucket = "./public"
-entry-point = "./"
+main = "src/index.ts"
