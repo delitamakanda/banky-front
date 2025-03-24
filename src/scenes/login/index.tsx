@@ -33,7 +33,7 @@ function Login() {
     }, [navigate, token])
 
 
-    const handleSubmit = async (e: Event): Promise<void> => {
+    const handleSubmit = async (e: FormEvent<HTMLFormElement>): Promise<void> => {
         e.preventDefault();
         try {
           // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
