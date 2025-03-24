@@ -15,14 +15,8 @@ export const store = configureStore({
 })
 setupListeners(store.dispatch);
 
-const Main = () => (
+ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <Provider store={store}>
     <App />
-  </Provider>
-);
-
-ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
-  <Main />
-);
-
-export default Main;
+  </Provider>,
+)
